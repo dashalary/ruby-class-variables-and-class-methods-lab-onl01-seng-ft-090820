@@ -32,7 +32,7 @@ class Song
       if @@genre_count.include?(genre) == false
         @@genre_count[genre] = 1 
       else
-      @@genre_count[genre] = @@genres.count
+      @@genre_count[genre] += 1
     end 
     @@genre_count
   end
