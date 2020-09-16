@@ -31,11 +31,11 @@ class Song
     new_count = 0
     @@genres.each do |genre|
       @@genre_count[genre] = new_count
+    end
       if @@genre_count.include?(genre) == false
         @@genre_count[genre] = 1 
       else
       @@genre_count[genre] += 1
-    end 
   end
   @@genre_count
 end
