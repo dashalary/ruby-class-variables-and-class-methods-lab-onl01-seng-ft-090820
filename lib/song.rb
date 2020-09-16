@@ -30,7 +30,8 @@ class Song
   
   def self.genre_count 
     @@genres.each do |genre|
-      @@genre_count[genre] = @@new_count
+      new_count = 0
+      @@genre_count[genre] = new_count
       if @@genre_count.include?(genre)
         @@genre_count[genre] += 1
       else
